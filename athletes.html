@@ -32,10 +32,12 @@ nav{position:fixed;top:0;inset-inline:0;z-index:2000;display:flex;justify-conten
 .logo img{height:100%;width:auto;object-fit:contain;display:block;filter:brightness(1.15)}
 .logo-text-fallback{font-family:'Rajdhani',sans-serif;font-size:26px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#FFF;display:none}
 .logo-x-fb{background:var(--metal);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.nav-back{display:flex;align-items:center;gap:10px;font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--chrome-dim);text-decoration:none;cursor:none;transition:color .3s}
-.nav-back:hover{color:var(--orange)}
-.nav-back::before{content:'←';font-size:14px;transition:transform .3s}
-.nav-back:hover::before{transform:translateX(-4px)}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+.nav-links li a{display:block;padding:0 14px;height:72px;line-height:72px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--chrome-dim);text-decoration:none;font-family:'Rajdhani',sans-serif;font-weight:600;transition:color .3s;white-space:nowrap}
+.nav-links li a:hover,.nav-links li a.active{color:var(--orange)}
+.nav-btn-link{font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;background:transparent;border:1px solid var(--orange);color:var(--orange);padding:9px 18px;cursor:none;margin-left:8px;transition:background .3s,color .3s;text-decoration:none;display:inline-block}
+.nav-btn-link:hover{background:var(--orange);color:#FFF}
+@media(max-width:900px){.nav-links{display:none}.nav-btn-link{display:none}}
 .nav-right{display:flex;align-items:center;gap:14px}
 .nav-type-toggle{display:flex;gap:2px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:4px}
 .nav-type-btn{font-family:'Rajdhani',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:7px 18px;cursor:none;border:none;background:transparent;color:var(--chrome-dim);transition:all .3s}
@@ -260,12 +262,22 @@ nav{position:fixed;top:0;inset-inline:0;z-index:2000;display:flex;justify-conten
     <img src="Legaxy_logo_light.png" alt="Legaxy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
     <span class="logo-text-fallback">LEGA<span class="logo-x-fb">X</span>Y</span>
   </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="athletes.html" class="active">Athletes</a></li>
+    <li><a href="athletes.html">Elite</a></li>
+    <li><a href="studio.html">Studio</a></li>
+    <li><a href="live.html">Live</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="https://tushar920.github.io/LSA/" target="_blank">Legaxy Learning</a></li>
+  </ul>
   <div class="nav-right">
     <div class="nav-type-toggle">
       <button class="nav-type-btn active" id="btnElite" onclick="setMode('elite')">Elite</button>
       <button class="nav-type-btn" id="btnEmerging" onclick="setMode('emerging')">Emerging</button>
     </div>
-    <a class="nav-back" href="index.html">Back to Home</a>
+    <a class="nav-btn-link" href="careers.html">Join Legaxy</a>
+    <a class="nav-btn-link" href="contact.html">Enter Ecosystem</a>
   </div>
 </nav>
 <div id="selector">

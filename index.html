@@ -935,19 +935,20 @@ nav>ul>li:hover .nav-drop{display:block}
       </div>
     </li>
     <li>
-  <a href="#portfolio">Portfolio <span class="nav-arr">▾</span></a>
-  <div class="nav-drop">
-    <a href="athletes.html">Legaxy Elite</a>
-    <a href="studio.html">Legaxy Studio</a>
-    <a href="live.html">Legaxy Live</a>
-    <a href="merch.html">Legaxy Merch</a>
-  </div>
-</li>
+      <a href="#portfolio">Portfolio <span class="nav-arr">▾</span></a>
+      <div class="nav-drop">
+        <a href="#portfolio" onclick="switchPortfolio(0);return false">Legaxy Elite</a>
+        <a href="#portfolio" onclick="switchPortfolio(1);return false">Legaxy Studio</a>
+        <a href="#portfolio" onclick="switchPortfolio(2);return false">Legaxy Live</a>
+        <a href="#portfolio" onclick="switchPortfolio(3);return false">Legaxy Merch</a>
+        <a href="#portfolio" onclick="switchPortfolio(4);return false">Legaxy Learning</a>
+      </div>
+    </li>
     <li><a href="#ip">Productions</a></li>
     <li><a href="https://tushar920.github.io/LSA/" target="_blank">Legaxy Learning</a></li>
     <li><a href="team/index.html">Team</a></li>
   </ul>
-  <button class="nav-btn"><span>Join Legaxy</span></button>
+  <a href="careers.html" class="nav-btn"><span>Join Legaxy</span></a>
   <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -960,7 +961,7 @@ nav>ul>li:hover .nav-drop{display:block}
   <a href="#ip" onclick="closeMobileMenu()">Productions</a>
   <a href="https://tushar920.github.io/LSA/" target="_blank" onclick="closeMobileMenu()">Legaxy Learning</a>
   <a href="team/index.html" onclick="closeMobileMenu()">Team</a>
-  <a href="mailto:hello@legaxy.org" class="mob-cta" onclick="closeMobileMenu()">Join Legaxy →</a>
+  <a href="careers.html" class="mob-cta" onclick="closeMobileMenu()">Join Legaxy →</a>
 </div>
 
 <!-- HERO -->
@@ -974,7 +975,7 @@ nav>ul>li:hover .nav-drop{display:block}
     <h1 class="hero-h1">ELEVATING<br/>SPORTS,<br/><em>FORGING LEGACIES.</em></h1>
     <p class="hero-sub">Where Talent Becomes Legacy.</p>
     <div class="hero-ctas">
-      <button class="btn-gold">Enter Ecosystem</button>
+      <a href="contact.html" class="btn-gold">Enter Ecosystem</a>
     </div>
   </div>
 </section>
@@ -1324,8 +1325,8 @@ nav>ul>li:hover .nav-drop{display:block}
     <h2 class="cta-h">BUILD A SPORTS<br/>CULTURE.<br/>NOT JUST A PROGRAM.</h2>
     <p class="cta-sub">Join the athletes, brands, and creators shaping the future of Indian sport.</p>
     <div class="cta-btns">
-      <button class="btn-cta-primary">Enter the Ecosystem</button>
-      <button class="btn-outline">View Portfolio</button>
+      <a href="contact.html" class="btn-cta-primary">Enter the Ecosystem</a>
+      <a href="#portfolio" class="btn-outline">View Portfolio</a>
     </div>
   </div>
 </section>
